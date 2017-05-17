@@ -9,6 +9,10 @@ app.AppRouter = Backbone.Router.extend({
   initializeFlights: function(){
     var appView = new app.AppView();
     appView.render();
+  },
+
+  test: function(){
+
   }
 
 

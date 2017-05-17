@@ -19,3 +19,7 @@ var app = app || {};
 	    console.log("A new flight was created");
 	  }
 	});
+
+	var newFlight1 = new app.Flight({origin: "SYD", destination: "SFO"});
+	var newFlight2 = new app.Flight({origin: "LAX", destination: "SFO"});
+	var newFlight3 = new app.Flight({origin: "LAX", destination: "SYD"});
