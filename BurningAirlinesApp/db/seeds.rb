@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 
 Plane.destroy_all
 
@@ -29,18 +28,6 @@ u4 = User.create(name: 'JJ')
 
 puts User.count
 
-<<<<<<< HEAD
-# Reservation.destroy_all
-#
-# r1 = Reservation.create(date: DateTime.parse("03/05/2017 13:00"), flight_id: f1.id, user_id: u1.id, row: 1, col: "A");
-# r2 = Reservation.create(date: DateTime.parse("03/05/2017 13:00"), flight_id: f2.id, user_id: u2.id, row: 2, col: "B");
-# r3 = Reservation.create(date: DateTime.parse("03/05/2017 13:00"), flight_id: f3.id, user_id: u3.id, row: 4, col: "C");
-# r4 = Reservation.create(date: DateTime.parse("03/05/2017 13:00"), flight_id: f1.id, user_id: u4.id, row: 4, col: "D");
-# r5 = Reservation.create(date: DateTime.parse("03/05/2017 13:00"), flight_id: f3.id, user_id: u5.id, row: 2, col: "C");
-#
-# Reservation.count
->>>>>>> 0a3180bb51968f118f170a530eaa4b713711de29
-=======
 Reservation.destroy_all
 
 r1 = Reservation.create(date: DateTime.parse("03/05/2017 13:00"), flight_id: f1.id, user_id: u1.id, row: 1, col: "A");
@@ -49,4 +36,3 @@ r3 = Reservation.create(date: DateTime.parse("03/05/2017 13:00"), flight_id: f3.
 r4 = Reservation.create(date: DateTime.parse("03/05/2017 13:00"), flight_id: f1.id, user_id: u4.id, row: 4, col: "D");
 
 p Reservation.count
->>>>>>> ad711ed5ab008f87705193b82291bb7f24ebb3a1
