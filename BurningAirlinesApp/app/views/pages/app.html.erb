@@ -1,2 +1,24 @@
-<h1>Pages#app</h1>
-<p>Find me in app/views/pages/app.html.erb</p>
+<div id="app">
+  <h1>This is where Backbone should be loaded</h1>
+</div>
+
+<script type="html/template" id="AppViewTemplate">
+  <h1>Burning Airlines</h1>
+  <hr/>
+
+  <div id="searchForm">
+  <textarea placeholder="Enter Origin Here"></textarea>
+  <textarea placeholder="Enter Destination Here"></textarea>
+
+  <button>Cancel</button>
+  <button>Search</button>
+</div>
+</script>
+
+<script type="html/template" id="SearchResultsTemplate">
+  <h2>Flight Search Results</h2>
+  <p>
+    <ul id="flights">
+    </ul>
+  </p>
+</script>
