@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origin: MyText
+  destination: MyText
+  plane_id: 1
+  date: 2017-05-17 10:56:01
+  remaining_seats: 1
+
+two:
+  origin: MyText
+  destination: MyText
+  plane_id: 1
+  date: 2017-05-17 10:56:01
+  remaining_seats: 1
