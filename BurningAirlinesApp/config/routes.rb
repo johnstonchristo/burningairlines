@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#app'
   get '/app' => 'pages#app'
+  get '/search' => 'pages#app'
 
   resources :users
   resources :reservations
