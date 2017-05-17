@@ -1,4 +1,5 @@
 
+
 Plane.destroy_all
 
 plane1 = Plane.create(name: 747,row: 100,col: 5);
