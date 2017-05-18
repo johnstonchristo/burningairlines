@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .container {
   width: 64%;
-  margin-top: 110px;
+  // margin-top: 50px;
   border: 5px solid #90a4ae;
   border-radius: 10px;
   float: center;
@@ -21,7 +21,10 @@
 }
 
 .title {
-  background-color: #b0bec5;
+  // background-color: #b0bec5;
+  padding-top: auto;
+  padding-left: 205px;
+  margin-bottom: 0 auto;
 }
 
 .forms {
@@ -37,7 +40,11 @@
   height:20px;
   width:100px;
   margin: 0px -50px;
-  position:relative;
+  position: relative;
   top:50%;
   left:50%;
+}
+
+.img {
+  height: 120px;
 }
