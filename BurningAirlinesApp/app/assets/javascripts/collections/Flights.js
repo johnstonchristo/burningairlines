@@ -12,23 +12,10 @@ app.Flights = Backbone.Collection.extend({
 
 });
 
-var flightsCollection = new app.Flights();
-
-flightsCollection.fetch().done(function(){
-  flightCollection.each(function(flight){
-    var origin = flight.get("origin");
-    console.log(origin);
-  });
-});
-
-
-// var newCollection = new app.Flights();
+// var flightsCollection = new app.Flights();
 //
-//
-// newCollection.add({origin: "LAX", destination: "SFO"});
-// newCollection.add({origin: "SFO", destination: "LAX"});
-// newCollection.add({origin: "SYD", destination: "JFK"});
-// newCollection.add({origin: "JFK", destination: "IST"});
-// newCollection.add({origin: "SYD", destination: "LAX"});
-// var flightList = newCollection.toJSON();
-// // console.log(flightList);
+// flightsCollection.fetch().done(function(){
+//   flightsCollection.each(function(flight){
+//     console.log(flight.toJSON());
+//   });
+// });
