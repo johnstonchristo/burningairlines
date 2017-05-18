@@ -3,7 +3,8 @@ var app = app || {};
 app.AppRouter = Backbone.Router.extend({
   routes: {
     '': 'initializeFlights',
-    '/search': 'test'
+    '/search': 'searchView'
+
   },
 
   initializeFlights: function(){
@@ -11,7 +12,7 @@ app.AppRouter = Backbone.Router.extend({
     appView.render();
   },
 
-  test: function(){
+  searchView: function(){
 
   }
 
