@@ -32,8 +32,8 @@ app.FlightListView = Backbone.View.extend({
     this.$el.html(message);
     this.$el.appendTo("#flights");
 
+
+
+
   }
 });
-//
-
-//

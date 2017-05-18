@@ -25,5 +25,18 @@
   <%= @flight.remaining_seats %>
 </p>
 
+
+<p>
+  <strong>Columns:</strong>
+  <%= @flight.col %>
+</p>
+
+
+<p>
+  <strong>Rows:</strong>
+  <%= @flight.row %>
+</p>
+
+
 <%= link_to 'Edit', edit_flight_path(@flight) %> |
 <%= link_to 'Back', flights_path %>
