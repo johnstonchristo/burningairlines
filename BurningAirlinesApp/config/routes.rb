@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/app' => 'pages#app'
   get '/search' => 'pages#app'
 
+
   resources :users
   resources :reservations
   resources :flights
