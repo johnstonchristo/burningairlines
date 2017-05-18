@@ -1,29 +1,39 @@
 var app = app || {};
 
+// This view should be rendered for every flight in your application
+
+
 app.FlightListView = Backbone.View.extend({
-  el: "#flights",
+  tagName: "li",
+
+  events: {
+    'click' : 'showFlight'
+  },
+
+  showFlight: function (){
+
+    console.log("key went down");
+
+    var id = this.model.get("id");
+    app.router.navigate("/flights/" + id, true);
+
+
+
+  },
 
   initialize: function(){
     console.log("a flight list view was created");
   },
 
   render: function(){
-    // debugger; In here, I need to loop through the collection list and append to the li
-    var templateMarkup = $("#SearchResultsTemplate").html();
-    this.$el.html(templateMarkup);
+    // debugger;
+    var message = "Origin: " + this.model.get("origin");
+    message += "Destination: " + this.model.get("destination");
+    this.$el.html(message);
+    this.$el.appendTo("#flights");
+
   }
 });
+//
 
 //
-// </script>
-// <div id="flights">
-//   <h2>A list of flights should show here</h2>
-//
-// <script type="html/template" id="SearchResultsTemplate">
-//   <h2>Flight Search Results</h2>
-//   <p>
-//     <ul id="flights">
-//     </ul>
-//   </p>
-//   </div>
-// </script>

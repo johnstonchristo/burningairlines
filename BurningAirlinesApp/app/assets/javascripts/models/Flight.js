@@ -12,7 +12,9 @@ var app = app || {};
 	  urlRoot: "/flights",
 
 	  defaults: {
-	    content: "This is one flight"
+	    origin: "SYD",
+			destination: "LAX"
+			
 	  },
 
 	  initialize: function(){
