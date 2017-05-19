@@ -20,7 +20,7 @@ var data = flight.toJSON();
 
 
 
-
+        debugger;
 
         function tableCreate() {
             var seatMap = document.getElementById("seatMap");
@@ -37,7 +37,10 @@ var data = flight.toJSON();
                     } else {
                         var td = tr.insertCell();
 
-                        td.appendChild(document.createTextNode('A'));
+                        td.appendChild(
+                            document.createTextNode((i + 1) + " " + (j + 1))
+                        );
+                        td.setAttribute("id", (i + 1) + " " + (j + 1));
                         td.style.border = '1px solid black';
                         // if (i == 1 && j == 1) {
                         //     // td.setAttribute('rowSpan');
@@ -47,6 +50,8 @@ var data = flight.toJSON();
                     td.addEventListener("click", function() {
                         alert("Your seat has been selected!");
                         console.log(td.id);
+                        $(this).css("background", "green");
+
 
 
                     });
