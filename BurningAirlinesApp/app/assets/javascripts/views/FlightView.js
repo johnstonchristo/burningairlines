@@ -8,6 +8,7 @@ app.FlightView = Backbone.View.extend({
 
     makeReservation: function(){
         console.log("reservation saved");
+        document.location.reload();
     },
 
 
@@ -87,8 +88,8 @@ var data = flight.toJSON();
             var row = res.row;
             var col = res.col;
             var rowcol = row + col;
-            console.log(rowcol);
-            $("#rowcol").css("background", "red");
+            // console.log(rowcol);
+            $("#" + rowcol).css("background", "red");
             // Use the row and col, select the element with the ID of #rowcol
                 // Change the background
         });
