@@ -19,9 +19,6 @@ var data = flight.toJSON();
 
 
 
-
-        debugger;
-
         function tableCreate() {
             var seatMap = document.getElementById("seatMap");
             tbl = document.createElement('table');
