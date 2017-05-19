@@ -3,7 +3,8 @@ var app = app || {};
 app.AppRouter = Backbone.Router.extend({
   routes: {
     'search': 'index',
-    'flights/:id': 'showFlight'
+    'flights/:id': 'showFlight',
+    // 'reservations/:id': 'showReservation'
 
   },
 
@@ -26,6 +27,10 @@ app.AppRouter = Backbone.Router.extend({
     });
     flightView.render();
   }
+  //
+  // showReservation: function(){
+  //
+  // }
 
 
 
