@@ -44,6 +44,5 @@ app.AppView = Backbone.View.extend({
       });
       flv.render();
     });
-
   }
 });
