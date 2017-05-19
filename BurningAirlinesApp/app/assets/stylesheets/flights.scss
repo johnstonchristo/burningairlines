@@ -64,3 +64,24 @@
   font-family:  serif;
 
 }
+
+table {
+        border-collapse: separate;
+        border-spacing: 10px 5px;
+}
+
+.plane-icon {
+  width: 10px;
+  height: 10px;
+}
+
+.box {
+  height:20px;
+  width:100px;
+
+}
+
+td {
+  border-radius: 10px;
+  color: grey;
+}
