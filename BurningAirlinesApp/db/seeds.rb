@@ -10,11 +10,11 @@ puts Plane.count
 
 Flight.destroy_all
 
-f1 = Flight.create(plane_id: 17, origin: "SYD", destination:"BNE",date: DateTime.parse("03/05/2017 13:00"));
-f2 = Flight.create(plane_id: 45, origin:"LAX", destination:"SFO", date: DateTime.parse("04/08/2015 17:00"));
-f3 = Flight.create(plane_id: 70, origin:"SFO", destination:"JFK", date: DateTime.parse("08/04/2015 17:00"));
-f4 = Flight.create(plane_id: 27, origin:"SYD", destination:"IST", date: DateTime.parse("14/3/2015 17:00"));
-f5 = Flight.create(plane_id: 88, origin:"SYD", destination:"LHR", date: DateTime.parse("04/5/2015 17:00"));
+f1 = Flight.create(plane_id: plane1.id, origin: "SYD", destination:"BNE",date: DateTime.parse(), row: plane1.row, col: plane1.col);
+f2 = Flight.create(plane_id: plane2.id, origin:"LAX", destination:"SFO", date: DateTime.parse("04/08/2015 17:00"),row: plane2.row, col: plane2.col);
+f3 = Flight.create(plane_id: plane3.id, origin:"SFO", destination:"JFK", date: DateTime.parse("08/04/2015 17:00"),row: plane3.row, col: plane3.col);
+f4 = Flight.create(plane_id: plane1.id, origin:"SYD", destination:"IST", date: DateTime.parse("14/3/2015 17:00"),row: plane1.row, col: plane1.col);
+f5 = Flight.create(plane_id: plane2.id, origin:"SYD", destination:"LHR", date: DateTime.parse("04/5/2015 17:00"),row: plane2.row, col: plane2.col);
 
 
 puts Flight.count

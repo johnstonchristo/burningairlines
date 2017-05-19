@@ -43,20 +43,36 @@
 
 
 <script type="html/template" id="SearchResultsTemplate">
-
+<div id="flightId">
   <h2>Flight Search Results</h2>
   <p>
     <ul id="flights">
     </ul>
   </p>
+  </div>
 </script>
 
 
 <script type="html/template" id="FlightViewTemplate">
-  <h1>Select Your Seat</h1>
-  <container id ="seatMap">
 
 
-  </container>
+
+
+
+  <div id ="seatMap">
+
+  <p>
+      <%%= origin %></h2> to <%%= destination %>
+
+  </p>
+
+<p>
+  <%%= plane_id %>
+  <%%= date %>
+  <%%= remaining_seats %>
+</p>
+
+
+  </div>
   <button>Save Your Seat</button>
 </script>
